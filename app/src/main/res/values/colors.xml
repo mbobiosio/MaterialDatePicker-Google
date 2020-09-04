@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="colorPrimary">#FF5722</color>
+    <color name="colorPrimaryVariant">#E64A19</color>
+    <color name="statusBarColor">#E64A19</color>
+    <color name="colorSelectedNavIcon">#F44336</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorSecondary">#FF5722</color>
+    <color name="colorSecondaryVariant">#FBE7AB</color>
+    <color name="colorOnSecondary">#FFFFFF</color>
+    <color name="colorError">#F44336</color>
+    <color name="colorOnError">#FFFFFF</color>
+    <color name="colorSurface">#FFFFFF</color>
+    <color name="colorOnSurface">#000000</color>
+    <color name="colorBackground">#F4F4F4</color>
+    <color name="colorOnBackground">#212121</color>
+
+</resources>

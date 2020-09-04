@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MaterialDatePicker</string>
+    <string name="material_date_picker">Date Picker</string>
+    <string name="material_date_picker_title">Single Date Picker</string>
+    <string name="material_date_range">Date Range</string>
+    <string name="material_date_range_title">Date Range Picker</string>
+    <string name="material_full_screen_range">Full Date Range</string>
+    <string name="material_full_screen_range_title">Full Date Range Picker</string>
+
+</resources>
