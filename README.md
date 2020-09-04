@@ -36,7 +36,10 @@ implementation 'com.google.android.material:material:1.3.0-alpha02'
 
 This is what we hope to achieve.
 
-<img src="https://raw.githubusercontent.com/mbobiosio/RecyclerViewSearch-Kotlin/master/screenshot.png" width="250" height="444" />
+<img src="https://raw.githubusercontent.com/mbobiosio/MaterialDatePicker-Google/master/device-2020-09-04-130158.png" width="250" height="444" />
+<img src="https://raw.githubusercontent.com/mbobiosio/MaterialDatePicker-Google/master/device-2020-09-04-130236.png" width="250" height="444" />
+<img src="https://raw.githubusercontent.com/mbobiosio/MaterialDatePicker-Google/master/device-2020-09-04-130302.png" width="250" height="444" />
+<img src="https://raw.githubusercontent.com/mbobiosio/MaterialDatePicker-Google/master/device-2020-09-04-130529.png" width="250" height="444" />
 
 ## © License 
 ```
