@@ -8,10 +8,10 @@ Moved to Material Design 3
 
 This is what we hope to achieve.
 
-<img src="https://raw.githubusercontent.com/mbobiosio/MaterialDatePicker-Google/master/images/home.png" width="250" height="444" />
-<img src="https://raw.githubusercontent.com/mbobiosio/MaterialDatePicker-Google/master/images/single-date.png" width="250" height="444" />
-<img src="https://raw.githubusercontent.com/mbobiosio/MaterialDatePicker-Google/master/images/date-range.png" width="250" height="444" />
-<img src="https://raw.githubusercontent.com/mbobiosio/MaterialDatePicker-Google/master/images/full-date-range.png" width="250" height="444" />
+<img src="https://raw.githubusercontent.com/mbobiosio/MaterialDatePicker-Google/master/images/home.png" width="250" height="542" />
+<img src="https://raw.githubusercontent.com/mbobiosio/MaterialDatePicker-Google/master/images/single-date.png" width="250" height="542" />
+<img src="https://raw.githubusercontent.com/mbobiosio/MaterialDatePicker-Google/master/images/date-range.png" width="250" height="542" />
+<img src="https://raw.githubusercontent.com/mbobiosio/MaterialDatePicker-Google/master/images/full-date-range.png" width="250" height="542" />
 
 ## © License 
 ```
