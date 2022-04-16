@@ -8,10 +8,10 @@ Moved to Material Design 3
 
 This is what we hope to achieve.
 
-<img src="https://raw.githubusercontent.com/mbobiosio/MaterialDatePicker-Google/master/device-2020-09-04-130158.png" width="250" height="444" />
-<img src="https://raw.githubusercontent.com/mbobiosio/MaterialDatePicker-Google/master/device-2020-09-04-130236.png" width="250" height="444" />
-<img src="https://raw.githubusercontent.com/mbobiosio/MaterialDatePicker-Google/master/device-2020-09-04-130302.png" width="250" height="444" />
-<img src="https://raw.githubusercontent.com/mbobiosio/MaterialDatePicker-Google/master/device-2020-09-04-130529.png" width="250" height="444" />
+<img src="https://raw.githubusercontent.com/mbobiosio/MaterialDatePicker-Google/master/images/home.png" width="250" height="444" />
+<img src="https://raw.githubusercontent.com/mbobiosio/MaterialDatePicker-Google/master/images/single-date.png" width="250" height="444" />
+<img src="https://raw.githubusercontent.com/mbobiosio/MaterialDatePicker-Google/master/images/date-range.png" width="250" height="444" />
+<img src="https://raw.githubusercontent.com/mbobiosio/MaterialDatePicker-Google/master/images/full-date-range.png" width="250" height="444" />
 
 ## © License 
 ```
@@ -21,7 +21,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-   http://www.apache.org/licenses/LICENSE-2.0
+http://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
