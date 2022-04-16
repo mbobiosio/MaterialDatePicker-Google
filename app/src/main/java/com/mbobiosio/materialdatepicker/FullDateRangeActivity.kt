@@ -3,11 +3,10 @@ package com.mbobiosio.materialdatepicker
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
-import com.google.android.material.datepicker.CalendarConstraints
-import com.google.android.material.datepicker.DateValidatorPointForward
 import com.google.android.material.datepicker.MaterialDatePicker
+import com.mbobiosio.materialdatepicker.databinding.ActivityFullDateRangeBinding
 import com.mbobiosio.materialdatepicker.util.calendarConstraints
-import kotlinx.android.synthetic.main.activity_full_date_range.*
+import com.mbobiosio.materialdatepicker.util.getTheme
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -15,16 +14,17 @@ class FullDateRangeActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_full_date_range)
+        val binding = ActivityFullDateRangeBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         val actionBar = supportActionBar
         actionBar?.setDisplayHomeAsUpEnabled(true)
 
-        fullDateRange.setOnClickListener {
+        binding.fullDateRange.setOnClickListener {
             val datePicker = MaterialDatePicker.Builder.dateRangePicker()
                 .setCalendarConstraints(calendarConstraints())
                 .setTitleText(R.string.material_full_screen_range_title)
-                .setTheme(Util.getTheme(this, R.attr.materialCalendarFullscreenTheme))
+                .setTheme(getTheme(R.attr.materialCalendarFullscreenTheme))
                 .setInputMode(MaterialDatePicker.INPUT_MODE_CALENDAR)
                 .build()
 
@@ -38,7 +38,7 @@ class FullDateRangeActivity : AppCompatActivity() {
                 val startDate = it.first?.let { it1 -> Date(it1 + zoneOffset) }
                 val endDate = it.second?.let { it1 -> Date(it1 + zoneOffset) }
 
-                date_info.text =
+                binding.dateInfo.text =
                     "Start Date ${sdf.format(startDate!!)} :: End Date ${sdf.format(endDate!!)}"
             }
             datePicker.show(supportFragmentManager, datePicker.toString())

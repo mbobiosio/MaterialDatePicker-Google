@@ -1,29 +1,28 @@
 package com.mbobiosio.materialdatepicker
 
-import android.os.Build
 import android.os.Bundle
-import android.util.Log
 import android.view.MenuItem
-import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
-import com.google.android.material.datepicker.*
+import com.google.android.material.datepicker.MaterialDatePicker
+import com.mbobiosio.materialdatepicker.databinding.ActivityDateRangeBinding
 import com.mbobiosio.materialdatepicker.util.calendarConstraints
-import kotlinx.android.synthetic.main.activity_date_range.*
+import com.mbobiosio.materialdatepicker.util.getTheme
 import java.text.SimpleDateFormat
 import java.util.*
 
-@RequiresApi(Build.VERSION_CODES.O)
 class DateRangeActivity : AppCompatActivity() {
 
+    private lateinit var binding: ActivityDateRangeBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_date_range)
+        binding = ActivityDateRangeBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         val actionBar = supportActionBar
         actionBar?.setDisplayHomeAsUpEnabled(true)
 
-        dateRange.setOnClickListener {
+        binding.dateRange.setOnClickListener {
             setupCalendar()
         }
     }
@@ -43,7 +42,7 @@ class DateRangeActivity : AppCompatActivity() {
         val datePicker = MaterialDatePicker.Builder.dateRangePicker()
             .setCalendarConstraints(calendarConstraints())
             .setTitleText(R.string.material_date_range_title)
-            .setTheme(Util.getTheme(this, R.attr.materialCalendarTheme))
+            .setTheme(getTheme(R.attr.materialCalendarTheme))
             .setInputMode(MaterialDatePicker.INPUT_MODE_CALENDAR)
             .build()
 
@@ -56,7 +55,7 @@ class DateRangeActivity : AppCompatActivity() {
             val startDate = it.first?.let { it1 -> Date(it1 + zoneOffset) }
             val endDate = it.second?.let { it1 -> Date(it1 + zoneOffset) }
 
-            date_info.text =
+            binding.dateInfo.text =
                 "Start Date ${sdf.format(startDate!!)} :: End Date ${sdf.format(endDate!!)}"
         }
 

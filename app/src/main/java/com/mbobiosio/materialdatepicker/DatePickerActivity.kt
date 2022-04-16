@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.datepicker.CalendarConstraints
 import com.google.android.material.datepicker.DateValidatorPointForward
 import com.google.android.material.datepicker.MaterialDatePicker
-import kotlinx.android.synthetic.main.activity_date_picker.*
+import com.mbobiosio.materialdatepicker.databinding.ActivityDatePickerBinding
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -14,12 +14,13 @@ class DatePickerActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_date_picker)
+        val binding = ActivityDatePickerBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        val actionBar =  supportActionBar
+        val actionBar = supportActionBar
         actionBar?.setDisplayHomeAsUpEnabled(true)
 
-        datePicker.setOnClickListener {
+        binding.datePicker.setOnClickListener {
             val builder = MaterialDatePicker.Builder.datePicker()
             builder.setTitleText(R.string.material_date_picker_title)
 
@@ -39,7 +40,7 @@ class DatePickerActivity : AppCompatActivity() {
                 val sdf = SimpleDateFormat("dd-MM-yyyy", Locale.US)
                 val date = Date(it + zoneOffset)
 
-                date_info.text = sdf.format(date)
+                binding.dateInfo.text = sdf.format(date)
             }
         }
     }
